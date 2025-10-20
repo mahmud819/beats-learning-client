@@ -1,7 +1,10 @@
 import React from "react";
 import web from './../../assets/Icon.png'
-import progessIcon from './../../assets/Icon (1).png'
-import graduateIcon from './../../assets/Icon (2).png'
+import webDevelopImg from './../../assets/webDevelop.png'
+import musicImg from './../../assets/Music.png'
+import personalityImg from './../../assets/personelety.png'
+import { CiYoutube } from "react-icons/ci";
+import { FaRegFile } from "react-icons/fa";
 
 const FeatureClasses = () => {
   return (
@@ -12,52 +15,63 @@ const FeatureClasses = () => {
         </div>
       <div className="lg:flex gap-x-4">
         <div className="card bg-base-100 w-96 shadow-xl">
-          <figure className="px-10 pt-10">
-            <img src={teacherIcon} alt="icons" className="rounded-xl" />
+          <figure className="pt-10">
+            <img src={webDevelopImg} alt="icons" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title text-[#1E1E1E] font-bold text-lg">
-              Experienced Teacher
+            <h2 className="card-title text-[#000000] font-bold text-md">
+              A Complete Web development
             </h2>
-            <p>
-              We teach in small groups with experienced, supportive staff who
-              are trained to understand some of the problems our students face.{" "}
+            <p className="text-[#878787]">
+              Technology to Web development
             </p>
+            <div className="flex gap-x-6 pt-6">
+              <div className="font-bold">$450</div>
+              <div className="flex gap-x-1"><CiYoutube className="mt-1"/><span className="my-auto ">23.5 hours</span></div>
+              <div className="flex gap-x-1"><FaRegFile className="mt-1" />52 Article</div>
+            </div>
           </div>
         </div>
 
         {/* card 2 */}
 
         <div className="card bg-base-100 w-96 shadow-xl">
-          <figure className="px-10 pt-10">
-            <img src={progessIcon} alt="icons" className="rounded-xl" />
+          <figure className="pt-10">
+            <img src={musicImg} alt="icons" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title text-[#1E1E1E] font-bold text-lg">
-              Progressive Learning
+            <h2 className="card-title text-[#000000] font-bold text-md">
+              Music Production Courses
             </h2>
-            <p>
-              Our mission is to use our knowledge, skills, and networks to equip
-              people with multiple disadvantages with the skills to gain and
-              sustain employment
+            <p className="text-[#878787]">
+              Music & Sounding
             </p>
+            <div className="flex gap-x-6 pt-6">
+              <div className="font-bold">$320</div>
+              <div className="flex gap-x-1"><CiYoutube className="mt-1"/><span className="my-auto ">18 hours</span></div>
+              <div className="flex gap-x-1"><FaRegFile className="mt-1" />27 Article</div>
+            </div>
           </div>
         </div>
 
         {/* card 3 */}
 
         <div className="card bg-base-100 w-96 shadow-xl">
-          <figure className="px-10 pt-10">
-            <img src={graduateIcon} alt="icons" className="rounded-xl" />
+          <figure className="pt-10">
+            <img src={personalityImg} alt="icons" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title text-[#1E1E1E] font-bold text-lg">
-              Graduate and job ready
+            <h2 className="card-title text-[#000000] font-bold text-md">
+             Personality development course
             </h2>
-            <p>
-              We are a unique training provider willing to give you all the
-              skills and experience you need to fulfil your future career
+            <p className="text-[#878787]">
+              Personal development
             </p>
+            <div className="flex gap-x-6 pt-6">
+              <div className="font-bold">$620</div>
+              <div className="flex gap-x-1"><CiYoutube className="mt-1"/><span className="my-auto ">32.3 hours</span></div>
+              <div className="flex gap-x-1"><FaRegFile className="mt-1" />37 Article</div>
+            </div>
           </div>
         </div>
       </div>
