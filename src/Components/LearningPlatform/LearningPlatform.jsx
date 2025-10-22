@@ -7,7 +7,7 @@ const LearningPlatform = () => {
   return (
     <div className="py-8">
       <div className="lg:px-12 flex">
-        <div className="lg:w-1/2 lg:px-10 pt-36">
+        <div className="lg:w-1/2 lg:pl-4 pt-36">
           <p className="text-[#2F2B71] text-lg">SIMPLE LEAENING PLATFORM</p>
           <h1 className="text-[#101130] lg:text-6xl py-6">
             A quality place for distance learning

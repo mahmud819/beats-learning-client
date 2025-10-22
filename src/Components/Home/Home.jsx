@@ -5,6 +5,7 @@ import GetClass from '../GetClass/GetClass';
 import Services from '../Services/Services';
 import FeatureClasses from '../FeatureClasses/FeatureClasses';
 import LearningPlatform from '../LearningPlatform/LearningPlatform';
+import NewsLetter from '../NewsLetter/NewsLetter';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Services></Services>
             <FeatureClasses></FeatureClasses>
             <LearningPlatform></LearningPlatform>
+            <NewsLetter></NewsLetter>
         </div>
     );
 };
