@@ -8,7 +8,7 @@ const NewsLetter = () => {
   return (
     
       
-      <div className="py-12 flex justify-center items-center">
+      <div className="hidden py-12 flex justify-center items-center">
         
 
         <div className="lg:px-6 w-11/12 ml-6 flex justify-between bg-[#8BD2BD]">

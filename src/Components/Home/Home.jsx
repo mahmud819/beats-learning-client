@@ -9,7 +9,7 @@ import NewsLetter from '../NewsLetter/NewsLetter';
 
 const Home = () => {
     return (
-        <div>
+        <div className=''>
             <Hero></Hero>
             <GetClass></GetClass>
             <Services></Services>

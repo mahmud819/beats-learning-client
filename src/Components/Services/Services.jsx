@@ -5,8 +5,8 @@ import graduateIcon from './../../assets/Icon (2).png'
 
 const Services = () => {
   return (
-    <div className="lg:flex gap-x-4 px-12">
-      <div className="card bg-base-100 w-96 shadow-xl">
+    <div className="flex flex-col gap-y-4 px-2 lg:gap-x-4 lg:px-12 lg:flex-row">
+      <div className="card bg-base-100 shadow-xl w-96">
         <figure className="px-10 pt-10">
           <img
             src={teacherIcon}

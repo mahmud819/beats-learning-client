@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const LearningPlatform = () => {
   return (
-    <div className="py-8">
+    <div className="hidden py-8">
       <div className="lg:px-12 flex">
         <div className="lg:w-1/2 lg:pl-4 pt-36">
           <p className="text-[#2F2B71] text-lg">SIMPLE LEAENING PLATFORM</p>

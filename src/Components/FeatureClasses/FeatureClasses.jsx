@@ -8,12 +8,12 @@ import { FaRegFile } from "react-icons/fa";
 
 const FeatureClasses = () => {
   return (
-    <div className="px-12 py-14">
-        <div className="py-8">
-            <h1 className="font-bold text-2xl">Featured Course</h1>
-            <p className="text-[#BDBDBD]">Everything you need to  when you're looking</p>
+    <div className="p-4 lg:px-12 lg:py-14">
+        <div className="py-4 mx-auto block lg:py-8">
+            <h1 className="font-bold text-2xl text-center lg:text-left">Featured Course</h1>
+            <p className="text-[#BDBDBD] text-center py-4 lg:text-left">Everything you need to  when you're looking</p>
         </div>
-      <div className="lg:flex gap-x-4">
+      <div className="flex flex-col gap-y-4 lg:flex lg:gap-x-4 lg:flex-row">
         <div className="card bg-base-100 w-96 shadow-xl">
           <figure className="pt-10">
             <img src={webDevelopImg} alt="icons" className="rounded-xl" />
