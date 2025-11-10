@@ -8,6 +8,7 @@ import About from "../Components/About/About";
 import Courses from "../Components/Courses/Courses";
 import Apparentiships from "../Components/Apprentships/Apparentiships";
 import More from "../Components/More/More";
+import Login from "../Login/Login";
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         
     ]
   },
+  {
+    path: "login",
+    element: <Login></Login>
+  }
 ]);
 
 export default router;

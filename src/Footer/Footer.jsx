@@ -5,8 +5,8 @@ import './../App.css'
 
 const Footer = () => {
     return (
-        <div className='flex px-3 py-6 hidden'>
-            <div className='w-[70%]'>
+        <div className='w-full flex flex-col-reverse px-3 py-6 lg:flex-row '>
+            <div className='w-full lg:w-[70%]'>
                 <table>
                     <tr>
                         <th>Pages</th>
@@ -35,7 +35,7 @@ const Footer = () => {
                     </tr>
                 </table>
             </div>
-            <div className='w-[30%]'>
+            <div className='w-full ml-16 mx-auto pr-4 lg:w-[30%] lg:ml-0'>
                 <div className='flex justify-between'>
                     <h1 className='text-lg font-bold'>Find Us at</h1>
                     <div className='flex items-center gap-x-2'>
@@ -44,8 +44,8 @@ const Footer = () => {
                         <FaLinkedinIn></FaLinkedinIn>
                     </div>
                 </div>
-                <div className='pt-10'>
-                    <img src={mapPhoto} alt="map photo" />
+                <div  className='w-full py-10'>
+                    <img className='w-full' src={mapPhoto} alt="map photo" />
                 </div>
             </div>
         </div>
