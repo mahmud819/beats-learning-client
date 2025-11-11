@@ -50,8 +50,8 @@ const Navbar = () => {
         </div>
         {/* button section */}
         <div className="navbar-end gap-x-2 lg:pt-6">
-          <NavLink className='btn'>Sign In</NavLink>
-          <NavLink to='/login' className='btn'>Login</NavLink>
+          <NavLink to='/signup' className='btn'>Sign Up</NavLink>
+          <NavLink to='/login' className='btn'>Sign In</NavLink>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import Courses from "../Components/Courses/Courses";
 import Apparentiships from "../Components/Apprentships/Apparentiships";
 import More from "../Components/More/More";
 import Login from "../Login/Login";
+import Regester from "../Regester/Regester";
 
 
 const router = createBrowserRouter([
@@ -41,9 +42,13 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path: "login",
+    path: "/login",
     element: <Login></Login>
-  }
+  },
+  {
+    path: "/signup",
+    element: <Regester></Regester>
+  },
 ]);
 
 export default router;
