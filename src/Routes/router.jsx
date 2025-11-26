@@ -10,12 +10,14 @@ import Apparentiships from "../Components/Apprentships/Apparentiships";
 import More from "../Components/More/More";
 import Login from "../Login/Login";
 import Regester from "../Regester/Regester";
+import Error from "../ErrorPage/Error";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <Error></Error>,
     children:[
         {
             path: "/",

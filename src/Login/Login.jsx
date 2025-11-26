@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className=" flex min-h-screen bg-[#F5F5F5] justify-center items-center ">
+    <div className=" flex min-h-screen bg-base-300 justify-center items-center ">
       {/* login main div */}
       <div className="login-main w-1/3 my-auto  pt-0">
-        <div className="form-div w-full border-2 p-2 radius-2 rounded-lg z-10 bg-[#FFF]">
+        <div className="form-div w-full border-2 p-2 radius-2 rounded-lg z-10 bg-[#FFF] shadow-lg">
           <div className="flex flex-col justify-center items-center p-2 ">
             <FaRegUser className="text-7xl border-2 border-slate-300 rounded-full p-2 text-[#54B8FF]" />
-            <h1 className="text-3xl pt-1 text-[#54B8FF]">Login</h1>
+            <h1 className="text-3xl pt-1 text-[#54B8FF]">Sign In</h1>
             {/* <FaRegCircleUser className="text-6xl" /> */}
           </div>
           <form action="" className="flex flex-col mt-0 p-2">
