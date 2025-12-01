@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaFacebook, FaGoogle, FaRegCircleUser, FaRegUser } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
+
+  // auth context rendering
+  const{userLogin}= useContext(AuthContext);
+
+  // user login function
+
+  const handleSingnIn = (event)=>{
+    event.preventDefault();
+
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email,password);
+    userLogin(email,password)
+    .then((userCredential)=>{
+      Swal.fire({
+                title: "Login successful",
+                icon: "success",
+                draggable: true,
+              });
+    })
+    .catch((error)=>{
+      console.log(error.message)
+    })
+    form.reset();
+  }
   return (
     <div className=" flex min-h-screen bg-base-300 justify-center items-center ">
       {/* login main div */}
@@ -15,13 +43,14 @@ const Login = () => {
             <h1 className="text-3xl pt-1 text-[#54B8FF]">Sign In</h1>
             {/* <FaRegCircleUser className="text-6xl" /> */}
           </div>
-          <form action="" className="flex flex-col mt-0 p-2">
+          <form onSubmit={handleSingnIn} action="" className="flex flex-col mt-0 p-2">
             <label htmlFor="">Email</label>
             <div className="flex justify-center items-center p-2 -ml-16">
               <MdOutlineMailOutline className="mt-2 -ml-4" />
               <input
                 className="mt-1 ml-2 border-b-2 outline-none"
                 placeholder="Email"
+                name="email"
                 type="text"
               />
             </div>
@@ -34,6 +63,7 @@ const Login = () => {
               <input
                 className="mt-1 ml-2 border-b-2 outline-none"
                 placeholder="Password"
+                name="password"
                 type="Password"
               />
             </div>
