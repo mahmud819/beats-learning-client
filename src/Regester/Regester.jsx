@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { FaUserAlt } from "react-icons/fa";
+import { FaEyeSlash, FaRegEye, FaUserAlt } from "react-icons/fa";
 import { FaFacebook, FaGoogle, FaRegUser, FaUser } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
@@ -19,7 +19,9 @@ const Regester = () => {
   // show password function
 
   const handleShowPassword=()=>{
-    setShowPassword(!true);
+    console.log('handle Show Password');
+    setShowPassword(!showpassword);
+    console.log(showpassword);
   }
 
   // sign up function
@@ -111,7 +113,7 @@ const Regester = () => {
               </div>
             </div>
 
-            {/* password  */}
+            {/* password input */}
 
             <div className="w-full">
               <label className="mt-2" htmlFor="">
@@ -122,12 +124,16 @@ const Regester = () => {
                 <input
                   className="w-[90%] mt-1 border-b-2 outline-none pl-2"
                   placeholder="Password"
-                  type="Password"
+                  type={showpassword?'text':"password"}
                   name="password"
                   required
                 />
-                <i class="fa-regular fa-eye text-black -ml-6"></i>
+                {/* eye icon  */}
+
+                {!showpassword?<FaEyeSlash onClick={handleShowPassword} className="mt-2 -ml-6" />:<FaRegEye onClick={handleShowPassword} className="mt-2 -ml-6" />}
+                
               </div>
+              
             </div>
 
             {/* validation error messages  */}

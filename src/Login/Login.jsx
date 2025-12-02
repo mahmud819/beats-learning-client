@@ -5,11 +5,12 @@ import { RiLockPasswordLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import { FaEye, FaEyeSlash, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 const Login = () => {
 
   // auth context rendering
-  const{userLogin}= useContext(AuthContext);
+  const{userLogin,user}= useContext(AuthContext);
 
   // user login function
 
@@ -44,11 +45,11 @@ const Login = () => {
             {/* <FaRegCircleUser className="text-6xl" /> */}
           </div>
           <form onSubmit={handleSingnIn} action="" className="flex flex-col mt-0 p-2">
-            <label htmlFor="">Email</label>
-            <div className="flex justify-center items-center p-2 -ml-16">
-              <MdOutlineMailOutline className="mt-2 -ml-4" />
+            <label>Email</label>
+            <div className="flex justify-center items-center">
+              <MdOutlineMailOutline className="mt-2" />
               <input
-                className="mt-1 ml-2 border-b-2 outline-none"
+                className="w-[100%] mt-1  ml-2 border-b-2 outline-none"
                 placeholder="Email"
                 name="email"
                 type="text"
@@ -58,18 +59,20 @@ const Login = () => {
             <label className="mt-2" htmlFor="">
               Password
             </label>
-            <div className="flex justify-center items-center p-2 -ml-16">
-              <RiLockPasswordLine className="mt-2 -ml-4" />
+            <div className="flex justify-center items-center">
+              <RiLockPasswordLine className="mt-2" />
               <input
-                className="mt-1 ml-2 border-b-2 outline-none"
+                className="w-[100%] mt-1 ml-2 border-b-2 outline-none"
                 placeholder="Password"
                 name="password"
                 type="Password"
               />
+              <FaRegEye className="-ml-4"></FaRegEye>
+              <FaEyeSlash />
             </div>
-            <button className="mt-1 bg-[#54B8FF] p-2">Login</button>
+            <button className="mt-2 bg-[#54B8FF] p-2">Login</button>
           </form>
-          <div className="text-center">
+          <div className="text-center ">
             <Link to="/signup" className="text-center text-sm mx-auto">Don't have an account? <span className="text-[#54B8FF]">Sign Up</span></Link>
           </div>
 
